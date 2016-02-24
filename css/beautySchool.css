@@ -1,0 +1,139 @@
+html {
+	background-color: #869960;
+}
+
+body {
+	font-family: Tahoma, sans-serif;
+	font-size: 87%
+}
+
+header h1 {
+	padding-top: 20px;
+	color: #617140;
+	margin: 0;
+	font-weight: normal;
+	font-size: 165%;
+}
+
+header p {
+	margin: 0;
+	padding-bottom: 20px;
+}
+
+
+/* Site Navigtion */
+.site-nav {
+	margin-top: 00px;
+	padding: 0;
+}
+
+.site-nav ul {
+	margin: 0;
+	padding: 0;
+}
+
+.site-nav li {
+	list-style: none; /* Removes bullets from the list. */
+	float: left;      /* Float all list items to left. */\
+	margin-right: 5px;
+}
+
+.site-nav a {
+	display: block;
+	text-decoration: none;  /* Remove the link underlines .*/
+	color: #617140;
+	padding: 10px 20px;
+	border: 3px solid #E5E9DC;
+	border-bottom: none;
+}
+
+.site-nav a:hover {
+	background-color: #E5E9DC;
+	
+}
+
+/* End Site Navigtion */
+
+
+.content-area { /* This draws a horitontal border above and below elements
+                   referencing the content-area class. */
+	border-top:    3px solid #E5E9DC;
+	border-bottom: 3px solid #E5E9DC;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+/* Banner Overlay */
+.image-banner {
+	position: relative;
+	/* z-index: 10; If this was used, whichever element has the max. z-index will be placed on
+	                top of the other relative element--assuming both these elements overlapped. */
+}
+.image-banner img{
+	display: block;
+}
+.banner-description {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	color: #FFFFFF;
+	background-color: rgba(255, 0, 0, 0.65); /* red, green, blue, alpha */
+	padding: 15px 25px;
+}
+
+.container {
+	width: 940px; /* Limit width of everything contained within elements
+	                     that reference the 'container' class. */
+	/* The following 2 lines center the text on the web page. */
+	margin-right: auto;
+	margin-left: auto;
+	background-color: #FFFFFF;
+	padding-left: 40px;
+	padding-right: 40px;
+	box-sizing: border-box;
+
+}
+
+.main-area {
+	width: 66%;
+	float: left;
+	padding-right: 40px;
+	box-sizing: border-box;
+}
+
+.sidebar {
+	width: 34%;
+	float: left;
+	background-color: #E5E9DC;
+	padding: 20px 40px 20px 40px;  /* CSS shorthand. */
+	box-sizing: border-box;
+	font-size: 85%;
+
+}
+
+footer {
+	text-align: center;
+	font-size: 85%;
+	color: #999;
+	padding-bottom: 20px;
+	padding-top: 20px;
+
+}
+
+/* ALL BELOW CODE IS THE GROUPFIX WAY OF FIXING PROBLEMS WITH FLOATS.  COPY & PASTE IT. */
+.group:before,   /* DANGER: THERE CAN'T BE ANY SPACE CHARS BEFORE OR AFTER THE COLON (:) CHAR!  */
+.group:after {   /* DANGER: THERE CAN'T BE ANY SPACE CHARS BEFORE OR AFTER THE COLON (:) CHAR!  */
+	content: "";
+	display: table;
+}
+
+.group:after {   /* DANGER: THERE CAN'T BE ANY SPACE CHARS BEFORE OR AFTER THE COLON (:) CHAR!  */
+	clear: both;
+}
+
+.group {  /* This selector is for making old web browsers work. */
+	zoom: 1;
+}

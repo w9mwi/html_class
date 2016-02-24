@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>HTML Forms</title>
+		<!-- CSS IS IMPLEMENTED BY REFERENCING THE .css FILE VIA THE FOLLOWING LINE OF CODE. -->
+		<link rel="stylesheet" type="text/css" href="css/htmlForms.css">
+	</head>
+
+	<body>
+		<form>
+			<!-- When you click on the label, focus goes into the entry field. -->
+			<!-- The "name" attribute only needs to be added to the input elements
+			     where users will be making a choice, or entering text.  Therefore,
+			     the submit button doesn't need to have a name attribute. -->
+			<label for="firstName">First Name:</label>
+			<input id="firstName" name="firstName" type="text"></input>
+			</br>
+			<label for="lastName">Last Name:</label>
+			<input id="lastName" name="lastName" type="text"></input>
+			</br>
+			<!-- NOTE: There is a type attribute named "email".  Also, the "email" type
+			           will perform some validation on the text you enter. -->
+			<label for="email">E-Mail:</label>
+			<input id="email" name="email" type="email"></input>
+			</br>
+			<!-- NOTE: The type-"tel" below will make a touch-device display
+			           a keypad with numbers, for phone dialing. -->
+			<label for="telephone">Telephone:</label>
+			<input id="telephone" type="tel" name="telephone"></input>
+			</br>
+
+			<label for="yourMessage">Your Message:</label>
+			<textarea id="yourMessage"  name="yourMessage"></textarea>
+			</br>
+
+			<!-- DROPDOWN BOX -->
+			<label for="favoriteColor">What is your favorite color?</label>
+			<select id="favoriteColor"  name="favoriteColor">
+				<option value="colorRed">Red</option>
+				<option value="colorOrange">Orange</option>
+				<option value="colorYellow">Yellow</option>
+			</select>
+			</br>
+
+			<!-- RADIO BUTTONS -->
+			<fieldset>  <!-- A group of fields (radio buttons) related to one another. -->
+				<legend>What is your favorite meal?</legend>  <!-- A label for all radio buttons. -->
+
+				<input type="radio"  id="breakfast" name="favoriteMeal"  value="meal1">
+				<label for="breakfast">Breakfast</label>
+
+				<input type="radio"  id="brunch"    name="favoriteMeal"  value="meal2">
+				<label for="brunch">Brunch</label>
+
+				<input type="radio"  id="lunch"     name="favoriteMeal"  value="meal3">
+				<label for="lunch">Lunch</label>
+			</fieldset>
+			</br>
+			<!-- CHECK BOXES -->
+				<fieldset>  <!-- A group of fields (radio buttons) related to one another. -->
+				<legend>What meal(s) do you enjoy?</legend>  <!-- A label for all checkboxes. -->
+
+				<input type="checkbox"  id="breakfast" name="favoriteMeal"  value="mealA">
+				<label for="breakfast">Breakfast</label>
+
+				<input type="checkbox"  id="brunch"    name="favoriteMeal"  value="mealB">
+				<label for="brunch">Brunch</label>
+
+				<input type="checkbox"  id="lunch"     name="favoriteMeal"  value="mealC">
+				<label for="lunch">Lunch</label>
+			</fieldset>
+
+
+			<input type="submit" value="Submit"></input>
+		</form>
+	</body>
+
+</html>

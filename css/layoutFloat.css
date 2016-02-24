@@ -1,0 +1,39 @@
+.container {
+	width: 940px; /* Limit the width of everything referenced
+	                 by the 'container' class. */
+	/* The following 2 lines center the text on the web page. */
+	margin-right: auto;
+	margin-left: auto;
+
+}
+
+.content-area { /* This draws a horitontal border above and below elements
+                   referencing the content-area class. */
+	border-top:    3px solid black;
+	border-bottom: 3px solid black;
+}
+
+.main-area {
+	width: 66%;
+	float: left;
+}
+
+.sidebar {
+	width: 34%;
+	float: left;
+}
+
+/* ALL BELOW CODE IS THE GROUPFIX WAY OF FIXING PROBLEMS WITH FLOATS.  COPY & PASTE IT. */
+.group:before,   /* DANGER: THERE CAN'T BE ANY SPACE CHARS BEFORE OR AFTER THE COLON (:) CHAR!  */
+.group:after {   /* DANGER: THERE CAN'T BE ANY SPACE CHARS BEFORE OR AFTER THE COLON (:) CHAR!  */
+	content: "";
+	display: table;
+}
+
+.group:after {   /* DANGER: THERE CAN'T BE ANY SPACE CHARS BEFORE OR AFTER THE COLON (:) CHAR!  */
+	clear: both;
+}
+
+.group {  /* This selector is for making old web browsers work. */
+	zoom: 1;
+}

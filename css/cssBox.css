@@ -1,0 +1,20 @@
+.box-a {
+	background-color: LightGray;
+	padding: 30px; /* 30 pixels of padding on the top, bottom, left and right. */
+	border: 3px solid black;
+	margin-bottom: 20px;
+	width: 250px;
+	height: 150px;
+	box-sizing: border-box;  /* This property and value ensures the box will have the width and height
+	                            property values above, regardless of any padding or margin settings. */
+}
+
+.box-b {
+	background-color: orange;
+	width: 250px;
+	height: 150px;
+}
+
+/* NOTE: The difference between margin and padding is:
+         MARGIN is space OUTSIDE the box.
+         PADDING is space INSIDE the box.  */

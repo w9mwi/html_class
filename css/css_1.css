@@ -1,0 +1,98 @@
+
+/* The following code is a "CSS rule".  A CSS rule begins with a SELECTOR.
+   In this case, the SELECTOR is "h1", which means all <h1> elements in
+   the web page WILL be SELECTED to receive the designated styling. */
+
+/* There are 3 main SELECTORS...
+   1) TYPE SELECTORS - See EXAMPLE 1 below.
+   2) DESCENDENT SELECTORS - See EXAMPLE 2 below.
+   3) CLASS SELECTORS - See EXAMPLE 3 below.
+   4) THERE ARE MANY, MANY OTHER TYPES OF SELECTORS.
+   5) INHERITANCE (not a selector) - See EXAMPLE 4 below.
+*/
+
+/* EXAMPLE 1: The following 2 SELECTORS are TYPE SELECTORS. */
+h1 {  /* This code tags the all <h1> elements on the web page to have
+	     the color, and text-align,  designated here. */
+	color: orange;  /* This is line a DELCLARTION, where "color"
+	                   is the property, and "orange" is the value.
+	                   A CSS rule like this can contain MULTIPLE
+	                   DECLARATIONS. */
+	text-align: center;  /* Another DECLARATION.  The property is "color", the value is "center". */
+	font-size: 165%;
+	font-weight: normal;
+}
+
+p {  /* p is the SELECTOR, which gets applied to all <p> elements.
+	    'color' is the PROPERTY, 'green' is the VALUE. */
+	color: green;  /* Makes all paragraphs green. */
+}
+
+
+/* EXAMPLE 2: The following SELECTOR is a DESCENDENT SELECTOR. */
+body header h1 span {
+	color:blue;
+}
+
+
+/* EXAMPLE 3: The following SELECTORS are CLASS SELECTORS.  When an element
+              contains a 'class' attribute, we reference that class name by
+              preceding the class name with a period (.) char, like this: */
+.highlight {
+	background-color: yellow;
+}
+
+footer .highlight {
+	background-color: orange;
+}
+
+p .highlight {
+	background-color: orange;
+}
+
+/* EXAMPLE 4 - The following SELECTOR is a CASCADING SELECTOR, as it gets
+               implemented by ALL CHILDREN ELEMENTS (of the specified
+               SELECTOR) on the web page. 
+               NOTE: Not all properties can be inherited, so a selector
+                     doesn't necessarily pass its properties on to its
+                     kids.  */
+body {
+	font-family: monospace;  <!-- Make ALL text within the <body> element monospace. -->
+}
+
+footer {
+	font-family: fantasy;
+}
+
+/* SPECIFICITY - Which set of CSS instructions should a selector obey if two or more
+                 styles are competing with one another?  In this example, the
+                 <footer> element contains <p> elements.  However, all <p> elements
+                 were specified above as green.  So <footer> elements that contain
+                 child <p> elements won't be overridden with the purple color
+                 specified in this selector.  However, the selector that follows
+                 the one immediately below ('footer p') will override the color
+                 of the footer <p> elements, because  we designate so.  */
+footer {
+	color: purple;
+}
+
+footer p {  /* Specifies ONLY <p> child elements of <footer> will be purple. */
+	color: purple;
+}
+
+/* NOTE: The following SELECTOR will override the SELECTOR
+         directly above BECAUSE IT'S MORE SPCIFIC.  */
+body footer p {
+	color:silver;
+}
+
+/* NOTE: CLASS SELECTORS are MORE SPECIFIC than TYPE or DESCENDENT SELECTORS.
+          Therefore, CLASS SELECTORS will override TYPE and DESCENDENT SELECTORS. */
+
+/* NOTE: If two rules have identical SPECIFICITY, whichever one comes
+         last will take precedence. */
+
+/* NOTE: It is BEST PRACTICE to begin your .css file by specifying
+         more-generic rules.  And end your .css file by specifying
+         the more-specific rules.  So your .css flows from most-generic
+         rules to most-specific rules.  */

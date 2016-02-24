@@ -1,0 +1,67 @@
+/* Form Style */
+form {
+	background-color: #ECECEC;
+	padding: 30px 40px;
+}
+.hidden-label {
+	/* To make hidden-label INVISIBLE, do NOT use "display: none;"  Instead, do all this stuff: */
+	position: absolute;
+	height: 0;
+	width: 0;
+	overflow: hidden;
+	visibility: hidden;
+}
+
+input,
+select {  /* These settings allpy to ALL input fields, regardless of their "types". */
+	font-family: Tahoma, sans-serif;
+	font-size: 100%;
+}
+
+select {
+	-webkit-appearnce: none;
+	-webkit-border-radius: 0;
+	border-radius: 0;
+}
+
+input[type="email"], /* Select ONLY the types you want styled. */
+input[type="password"],
+input[type="text"],
+input[type="number"],
+input[type="tel"],
+select {
+	width: 100%;
+	display: block;
+	box-sizing: border-box;
+	padding: 0px 10px;
+	height: 40px;
+	margin-bottom: 15px;
+	border: 1px solid #CDCDCD;
+}
+
+input[type="email"]:focus, /* Select ONLY the types you want styled, ONLY when they have focus. */
+input[type="password"]:focus,
+input[type="text"]:focus,
+input[type="number"]:focus,
+input[type="tel"]:focus {
+	border: 3px solid #869960;
+	box-shadow: inset 2px 2px 2px rgba(0, 0, 0, 0.13);
+}
+
+input[type="submit"] {
+	width: 100%;
+	display: block;
+	box-sizing: border-box;
+	background-color: #869960;
+	color: FFFFFF;
+	padding: 10px 0px;
+	border: 1px solod #79A856;
+	border-radius: 10px;  /* This rounds the button corners. */
+	margin-bottom: 10px;
+}
+
+input[type="submit"]:hover, /* For the "submit" type ONLY, set hover and focus behavior. */
+input[type="submit"]:focus {
+	border: 1px solid #535E3B;
+	background-color: #798A56;
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<!-- HTML is used to describe CONTENT of a web page.
+     CSS (Cascading Style Sheet) is used to describe presentation of a web page. -->
+
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>CSS Layout and Float</title>
+		<!-- CSS IS IMPLEMENTED BY REFERENCING THE .css FILE VIA THE FOLLOWING LINE OF CODE. -->
+		<link rel="stylesheet" type="text/css" href="css/beautySchool.css">
+	</head>
+
+	<body>
+		<div class="container">
+			<header>
+				<h1>Website Title</h1>
+				<p>Website slogan included here.</p>
+
+				<!-- <nav> is a NAVIGATION ELEMENT, where you put links. -->
+				<nav class="site-nav">
+					<ul class="group">  <!-- Clear the floats. -->
+						<li><a href="#">Home</a></li>
+						<li><a href="#">About</a></li>
+						<li><a href="#">Portfolio</a></li>
+						<li><a href="#">Contact Us</a></li>
+					</ul>
+				</nav>
+			</header>
+
+			<!-- NOTE: The following <div> element has 2 classes; content-area and group. -->
+			<div class="content-area  group">
+				<div class="main-area">
+					<p>This is the main area (or column).  I'd become connected to an unseen force that surged below the stern and threatened to pull me into the drink. Off the bow, 4-foot-long fish launched themselves like cruise missiles fired from submarines.</p>
+
+					<div class="image-banner">
+						<img src="images/crestliner.jpg">
+							<div class="banner-description">
+								<p>This is the 2002 Crestliner 1600 SC Angler that I purchased in February 2002.</p>
+							</div>
+					</div>
+					<p>
+						The Navy should consider delaying deployment of the new littoral combat ship, and toning down praises for it, until the ship successfully completes more testing, Sens. John McCain (R-Ariz.), chairman of the Senate Armed Services Committee, and Jack Reed (D-R.I.), the panel's top Democrat, said in a Feb. 5 letter to the Navy, made public this week.
+					</p>
+				</div>
+
+				<aside class="sidebar">
+					<p>This is the sidebar.  A feeding frenzy was reaching a crescendo just west of Sanibel Island. At the moment, my main concern was staying aboard Capt. Ryan Kane's 24-foot boat and not joining the menu.</p>
+				</aside>
+			</div>
+
+			<footer>
+				<p>&copy; 2016 - This is the footer.</p>
+			</footer>
+		</div>
+	</body>
+
+
+</html>

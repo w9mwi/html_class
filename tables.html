@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>HTML Tables</title>
+		<!-- CSS IS IMPLEMENTED BY REFERENCING THE .css FILE VIA THE FOLLOWING LINE OF CODE. -->
+		<link rel="stylesheet" type="text/css" href="css/tables.css">
+	</head>
+
+	<!-- DANGER, WARNING: Tables should NEVER be used for layout purposes.  Instead,
+	                      CSS should be used to add layout and style to web pages. -->
+	<body>
+		<table class="grocery-list">
+			<!-- NOTE: <thead> and <tbody> don't affect appearance, but they:
+			           1) Provide a hook for CSS to communicatew with.
+			           2) Increase the symantic structure of HTML. -->
+			<thead>   <!-- thead dsesingates a table's first row as a Table Header.   -->
+				<tr>  <!-- tr = Table Row -->
+					<th class="col-item-name">Item Name</th>  <!-- <th> = Table Header -->
+					<th class="col-quantity">Quantity</th>
+					<th class="col-price">Price</th>
+				</tr>
+			</thead>
+
+			<tbody>  <!-- <tbody> designates which rows in the table contain data. -->
+				<tr>
+					<td>Oranges</td>  <!-- <td> = Table Data -->
+					<td>5</td>
+					<td>$3.00</td>
+				</tr>
+				<tr>
+					<td>Celery</td>
+					<td>2</td>
+					<td>$2.50</td>
+				</tr>
+				<tr>
+					<td>Garlic</td>
+					<td>2</td>
+					<td>$4.50</td>
+				</tr>
+				<tr>
+					<td>Bananas</td>
+					<td>6</td>
+					<td>$3.00</td>
+				</tr>
+				<tr>
+					<td>Onions sdf dssd ds gds hgfdhgufdg hrg re greoig ore go gore  jgoi goi goire gufd gufd giufd giufd fdiu uf fd fdiu iufdih</td>
+					<td>4</td>
+					<td>$3.00</td>
+				</tr>
+			<tbody>
+
+			<tfoot>  <!-- <-- <tfoot> designates Table Footer; the complement of <thead>. 
+			                   NOTE: Even though <tfoot> is located above the <tbody>
+			                          section, its contents will be displayed below
+			                          the <tbody> section.  HOWEVER, in HTML 5,
+			                          you can now place <tfoot> directly below
+			                          the </tbody> closing tag.  -->
+				<tr>
+	                <td>Total</td>    <!-- Falls under the 'Name' column. -->
+	                <td>N/A</td>    <!-- Falls under the 'Aisle' column. -->
+	                <td>$16.00</td>  <!-- Falls under the 'Price' column. -->
+                </tr>
+			</tfoot>
+		</table>
+	</body>
+
+</html>

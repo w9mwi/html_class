@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>HTML Forms</title>
+		<!-- CSS IS IMPLEMENTED BY REFERENCING THE .css FILE VIA THE FOLLOWING LINE OF CODE. -->
+		<link rel="stylesheet" type="text/css" href="css/htmlForms_2.css">
+	</head>
+
+	<body>
+		<form>
+			<!-- NOTE: There is a type attribute named "email".  Also, the "email" type
+			           will perform some validation on the text you enter. -->
+			<label for="email" class="hidden-label">E-Mail:</label>
+			<input type="email" name="email" id="email" placeholder="E-Mail"></input>
+
+			<label for="password" class="hidden-label">Password:</label>
+			<input type="password" name="password" id="password" placeholder="Password"></input>
+			</br>
+
+			<!-- DROPDOWN BOX -->
+			<select>
+				<option>Initially view...</option>
+				<option>My Profile</option>
+				<option>Inbox</option>
+				<option>Account Settings</option>
+			</select>
+
+			<input type="submit" value="Sign In">
+
+			<!-- CHECK BOX -->
+			<label>
+				<input type="checkbox" name="remember"  checked="checked"  value="yes">
+				<span class="checkbox-text">Stay signed in</span>
+			</label>
+		</form>
+	</body>
+
+</html>

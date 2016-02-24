@@ -1,0 +1,43 @@
+/* Table Styles */
+
+table {
+	border-spacing: 0;
+	border-collapse: collapse;
+	width: 100%;
+}
+
+.col-item-name {
+	width: 60%;
+}
+.col-quantity {
+	width: 20%;
+}
+.col-price" {
+	width: 20%;
+}
+
+table th {
+	text-align: left;
+	background-color: #869960;
+	color: #FFFFFF;
+	text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.4);
+}
+
+/* THE WHOLE TRHING IS A RULE.  "table th, table td" IS THE SELECTOR.
+   "border:" IS THE PROPERTY.  "1px solid #869960" IS THE VALUE.  */
+table th,
+table td {
+	border: 1px solid #869960;
+	padding 10px;
+	vertical-align: top; /* Make text do to top of cell, in case Item Name is so
+                            long it spans multiple rows. */
+}
+
+tbody tr:nth-child(odd) td {
+background-color: #E5E9DC;
+}
+
+table.grocery-list tr :nth-child(2),
+table.grocery-list tr :nth-child(3) {
+	text-align: center; /* Center the 2nd and 3rd rows */
+}

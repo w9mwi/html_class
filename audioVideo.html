@@ -1,0 +1,32 @@
+<!DOCTYPE html>  <!-- Use most recent version of HTML language. -->
+<html>
+	<head>
+		<!-- Contains info. about page. -->
+		<meta charset="utf-8">  <!-- charset is an html attribute inside the meta element. -->
+		<title>Example Page</title>
+	</head>
+	<body>
+		<!-- Content goes in the body element. -->
+		<h1>Home Page</h1>
+		<!-- If the image doesn't load, the alt text will appear. -->
+		<!-- images is the folder name. -->
+		<img src="images/crestliner.jpg" alt="Crestliner">
+		<p>Play some music...</p>
+		<audio controls>
+			<source src="audio/Greasy.ogg" type="audio/ogg"</source>
+				<!-- if above .ogg file isn't found, the following .mp3 file will play, if it exists.  -->
+			<source src="audio/Greasy.mp3" type="audio/mpeg"</source>  
+			<a href="Greasy.mp3">Greasy Audio</a>
+		</audio>
+
+		<h2>Video</h2>
+		<p>I have included an example video file on the page.</p>
+        <video controls>
+        	<source src="video/example.mp4"  type="video/mp4">
+        	<!-- if above .mp4 file isn't found, the following .webm file will play, if it exists.  -->
+        	<source src="video/example.webm"  type="video/webm">
+        	<source src="video/example.ogv"  type="video/ogg">
+        	Your web browser is outdated and doesn't support HTML video.  Please consider <a href="http://www.browsehappy.com">updating.</a>
+        </video>
+	</body>
+<html>

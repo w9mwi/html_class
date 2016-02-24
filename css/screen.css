@@ -1,0 +1,17 @@
+
+/* The following code is a "CSS rule".  A CSS rule begins with a selector.
+   In this case, the selector is "h1", which means all <h1> elements in
+   the web page will be selected to receive the designated styling. */
+
+h1 {  /* This tags the <h1> elements to have the color designated here. */
+	color: orange;  /* This is line a DELCLARTION, where "color"
+	                   is the property, and "orange" is the value.
+	                   A CSS rule like this can contain MULTIPLE
+	                   DECLARATIONS. */
+	text-align: center;  /* Another DECLARATION.  The property is "color", the value is "center". */
+}
+
+p {  /* p is the SELECTOR, which gets applied to all <p> elements.
+	    'color' is the PROPERTY, 'green' is the VALUE. */
+	color: green;  /* Makes all paragraphs green. */
+}
